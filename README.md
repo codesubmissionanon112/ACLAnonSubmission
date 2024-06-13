@@ -5,33 +5,30 @@
 ![Framework overview](fig.png)
 
 ### Dependencies
-pandas 2.2.2
-numpy 1.26.4
-scikit-learn 1.5.0
-evaluate 0.4.2
-datasets 2.19.2
-transformers 4.41.2
-rouge-score
+`pandas 2.2.2`
+`numpy 1.26.4`
+`scikit-learn 1.5.0`
+`evaluate 0.4.2`
+`datasets 2.19.2`
+`transformers 4.41.2`
+`rouge-score`
 
 ### Data 
-
-|   Dataset   |                                         Link                                       |
-|:----------:|:-----------------------------:|:------------------------------------------------------------------------------------------:|
-|   EmoBank   |  [**link**](https://github.com/JULIELab/EmoBank/tree/master/corpus) |
-|     NRC VAD Lexicon   |    [**link**](https://saifmohammad.com/WebPages/nrc-vad.html)    |
-| EmpatheticDialogues |     [**link**](https://huggingface.co/datasets/facebook/empathetic_dialogues)   |
-|   Emotion Dataset  |           [**link**](https://huggingface.co/datasets/dair-ai/emotion)             |
-|   dialogsum  |  [**link**](https://huggingface.co/datasets/knkarthick/dialogsum)             |
+1. EmoBank   |  [**link**](https://github.com/JULIELab/EmoBank/tree/master/corpus) |
+2. NRC VAD Lexicon   |    [**link**](https://saifmohammad.com/WebPages/nrc-vad.html)    |
+3. EmpatheticDialogues |     [**link**](https://huggingface.co/datasets/facebook/empathetic_dialogues)   |
+4.   Emotion Dataset  |           [**link**](https://huggingface.co/datasets/dair-ai/emotion)             |
+5.   dialogsum  |  [**link**](https://huggingface.co/datasets/knkarthick/dialogsum)             |
 
 ### Running Evaluation
 In the translate.py file, there are a number of function calls at the bottom, run each to do the following
 runModelInit()  Trains and fine tunes new versions of the models, this is necessary to run first as the models are too large to add to the repository.
-r = Runtime()   Create a new runtime
-r.runText()     Runs each of the models for comparison against a selected text
-r.evalBB()      Runs the BlenderBot model against the evaluation text
-r.eval()        Runs ETC Against the evaluation text
-r.evalUntuned() Runs The untuned seq2seq against the evaluation text
-evalMetrics()   Evaluates the predictions from each model against the evaluation responses
+`r = Runtime()`   Create a new runtime
+`r.runText()`     Runs each of the models for comparison against a selected text
+`r.evalBB()`      Runs the BlenderBot model against the evaluation text
+`r.eval()`        Runs ETC Against the evaluation text
+`r.evalUntuned()` Runs The untuned seq2seq against the evaluation text
+`evalMetrics()`   Evaluates the predictions from each model against the evaluation responses
 
 ### Generated Files
 "data/replyEvalSet.tsv" Target Evaluation responses

@@ -1,0 +1,4 @@
+model	res1	res2
+translate	<pad> i feel like i am a little tired from work</s>	<pad> I was so tired I had to go to sleep.</s>
+bb	<s> I love a good nap, especially after a long day of work. What time do you want to nap?</s>	<s> Oh no! I hate when that happens. Did you get up and go back to sleep?</s>
+unTuned	<pad> I like to nap at night. I'm usually up at 5 or 6 in the morning	<pad> I did, but I was so tired I couldn't sleep.</s>

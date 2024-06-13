@@ -23,12 +23,12 @@
 ### Running Evaluation
 In the translate.py file, there are a number of function calls at the bottom, run each to do the following
 runModelInit()  Trains and fine tunes new versions of the models, this is necessary to run first as the models are too large to add to the repository.
-`r = Runtime()`   Create a new runtime
-`r.runText()`     Runs each of the models for comparison against a selected text
-`r.evalBB()`      Runs the BlenderBot model against the evaluation text
-`r.eval()`        Runs ETC Against the evaluation text
-`r.evalUntuned()` Runs The untuned seq2seq against the evaluation text
-`evalMetrics()`   Evaluates the predictions from each model against the evaluation responses
+`r = Runtime()`   Create a new runtime <br>
+`r.runText()`     Runs each of the models for comparison against a selected text <br>
+`r.evalBB()`      Runs the BlenderBot model against the evaluation text <br>
+`r.eval()`        Runs ETC Against the evaluation text <br>
+`r.evalUntuned()` Runs The untuned seq2seq against the evaluation text <br>
+`evalMetrics()`   Evaluates the predictions from each model against the evaluation responses <br>
 
 ### Generated Files
 "data/replyEvalSet.tsv" Target Evaluation responses
